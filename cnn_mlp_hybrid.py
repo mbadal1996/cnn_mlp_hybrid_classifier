@@ -78,7 +78,7 @@ import torch.nn.functional as F
 # Image Parameters
 CH = 3  # number of channels
 ratio = 1.5625  # choose width/height ratio for resizing input images
-imagewidth = 313 # 157   # size of image cropped to square (imagesize x imagesize) 
+imagewidth = 157  # size of image cropped to square (imagesize x imagesize) 
 imageheight = int(np.floor(imagewidth/ratio))
 cropsize = imageheight
 #cropsize = imagewidth
