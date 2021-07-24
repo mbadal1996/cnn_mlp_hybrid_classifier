@@ -13,13 +13,13 @@ Created on Wed Jun 9 2021
 # image data + numeric features (meta-data) which further describe the images.
 # The output of the model is a continuous float value in the range [0,1] which
 # is due to normalization of the training label. In that sense it is a regression
-# as opposed to a classification. The original purpose of the code was to make 
-# predictions on housing prices (see So-Cal Housing in Kaggle) but this kind 
-# of hybrid classifier is useful for various other problems where both images
-# and numeric features are combined. In the event that a binary or multi-class
-# output is desired (instead of a float value regression), then the final 
-# output layer of the CNN+MLP should be modified for the number of classes 
-# and then passed through a softmax function.
+# as opposed to a classification. The average error per epoch is calculated.
+# The original purpose of the code was to make predictions on housing prices
+# (see So-Cal Housing in Kaggle) but this kind of hybrid classifier is useful
+# for various other problems where both images and numeric features are combined.
+# In the event that a binary or multi-class output is desired (instead of a 
+# float value regression), then the final output layer of the CNN+MLP should
+# be modified for the number of classes and then passed through a softmax function.
 
 # As an example, the house features (numeric data) CSV file is also included
 # in the repository so that the user can see the format. House images are not
