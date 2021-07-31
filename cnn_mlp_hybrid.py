@@ -5,17 +5,17 @@ Created on Wed Jun 9 2021
 @author: mbadal1996
 """
 # ==========================================================================
-# CNN + MLP Classifier for Image + Numeric Data 
+# CNN + MLP Model for Image + Numeric Data 
 # ==========================================================================
 
 # Comments:
-# The following Python code is a hybrid CNN + MLP classifier for combined 
+# The following Python code is a hybrid CNN + MLP model for combined 
 # image data + numeric features (meta-data) which further describe the images.
 # The output of the model is a continuous float value in the range [0,1] which
 # is due to normalization of the training label. In that sense it is a regression
 # as opposed to a classification. The average error per epoch is calculated.
 # The original purpose of the code was to make predictions on housing prices
-# (see So-Cal Housing in Kaggle) but this kind of hybrid classifier is useful
+# (see So-Cal Housing in Kaggle) but this kind of hybrid model is useful
 # for various other problems where both images and numeric features are combined.
 # In the event that a binary or multi-class output is desired (instead of a 
 # float value regression), then the final output layer of the CNN+MLP should
@@ -466,7 +466,7 @@ plt.plot(xvals[0:num_epochs].numpy(), result_vals[:,0].detach().numpy())
 plt.plot(xvals[0:num_epochs].numpy(), result_vals[:,1].detach().numpy())
 plt.legend(['loss_train', 'loss_val'], loc='upper right')
 #plt.xticks(xvals[0:num_epochs])
-plt.title('Loss (CNN + MLP Classifier)')
+plt.title('Loss (CNN + MLP Model)')
 plt.xlabel('epochs')
 plt.ylabel('loss')
 plt.tick_params(right=True, labelright=True)
@@ -478,7 +478,7 @@ plt.show()
 #plt.plot(xvals[0:num_epochs].numpy(), result_vals[:,3].numpy())
 #plt.legend(['error_train', 'error_val'], loc='lower right')
 ##plt.xticks(xvals[0:num_epochs])
-#plt.title('Accuracy (CNN + MLP Classifier)')
+#plt.title('Accuracy (CNN + MLP Model)')
 #plt.xlabel('epochs')
 #plt.ylabel('accuracy')
 #plt.tick_params(right=True, labelright=True)
