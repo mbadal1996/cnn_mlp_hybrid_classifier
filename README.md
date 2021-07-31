@@ -1,19 +1,19 @@
-# cnn_mlp_hybrid_classifier
+# cnn_mlp_hybrid_model
 The following python / pytorch code uses a CNN+MLP Hybrid architecture to predict on image+numeric data.
 
 =================================================================
 
-CNN + MLP Classifier for Image + Numeric Data 
+CNN + MLP Model for Image + Numeric Data 
 
 
 Comments:
-The following Python code is a hybrid CNN + MLP classifier for combined 
+The following Python code is a hybrid CNN + MLP architecture for combined 
 image data + numeric features (meta-data) which further describe the images.
 The output of the model is a continuous float value in the range [0,1] which
 is due to normalization of the training label. In that sense it is a regression
 as opposed to a classification. The average error per epoch is calculated.
 The original purpose of the code was to make predictions on housing prices 
-(see So-Cal Housing in Kaggle) but this kind of hybrid classifier is useful 
+(see So-Cal Housing in Kaggle) but this kind of hybrid model is useful 
 for various other problems where both images and numeric features are 
 combined. In the event that a binary or multi-class output is desired 
 (instead of a float value regression), then the final output layer of 
